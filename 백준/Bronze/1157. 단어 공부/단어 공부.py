@@ -1,11 +1,8 @@
-str_ = list(input().upper())
-str_set = set(str_)
-array = []
+str_ = (input().upper())
+array = list(set(str_))
+count_ = []
 
-for i in str_set :
-    array.append([str_.count(i), i])
+for i in array :
+    count_.append(str_.count(i))
 
-array_count = list(array[i][0] for i in range(len(array)))
-array = sum(array, [])
-
-print("?" if array_count.count(max(array_count)) >= 2 else array[array.index(max(array_count)) + 1])
+print("?" if count_.count(max(count_)) >= 2 else array[count_.index(max(count_))])
