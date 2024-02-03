@@ -1,7 +1,9 @@
+import sys
+
 id = []
 
-for _ in range(int(input())) :
-    age, name = map(str, input().split())
+for _ in range(int(sys.stdin.readline())) :
+    age, name = map(str, sys.stdin.readline().split())
     age = int(age)
     id.append([age, name])
 
