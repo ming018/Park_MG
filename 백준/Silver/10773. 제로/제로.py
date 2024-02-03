@@ -1,7 +1,9 @@
+import sys
+
 nums = []
 
-for _ in range(int(input())) :
-    num = int(input())
+for _ in range(int(sys.stdin.readline())) :
+    num = int(sys.stdin.readline())
     if num != 0 :
         nums.append(num)
     else :
