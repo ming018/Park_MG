@@ -1,6 +1,8 @@
-for _ in range(int(input())) :
+import sys
+
+for _ in range(int(sys.stdin.readline())) :
     check = 0
-    brackets = input()
+    brackets = sys.stdin.readline()
 
     for i in brackets :
         if i == '(' :
